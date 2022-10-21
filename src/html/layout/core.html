@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title></title>
+
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!-- Vendors - Do not defer, we want this render blocking -->
+        <script src="js/manifest.js"></script>
+        <script src="js/vendor.js"></script>
+
+        <!-- Global bundle, i.e non react component js -->
+        <script src="js/output.js" defer></script>
+    </head>
+
+    <body>
+        {% include 'components/header.html' %}
+
+        <main class="pt-[72px] bg-white">{% block content %}{% endblock %}</main>
+
+        {% include 'components/footer.html' %}
+    </body>
+</html>
