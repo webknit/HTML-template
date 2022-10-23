@@ -11,7 +11,7 @@
     "parserOptions": { "project": ["./tsconfig.json"] },
     "plugins": ["@typescript-eslint", "prettier"],
     "rules": {
-        "prettier/prettier": ["error", {}, { "usePrettierrc": true }], // allow prettier to handle formatting, eslint ONLY for linting
+        "prettier/prettier": ["error", { "endOfLine": "auto" }, { "usePrettierrc": true }], // allow prettier to handle formatting, eslint ONLY for linting
         "react/jsx-props-no-spreading": 2, // Please do not spread attrs or props anywhere, be verbose
         "react/react-in-jsx-scope": "off" // As we are using TS we do not need react to be in scope / imported
         // Try and avoid disabling any rules globally like this, its here for a reason

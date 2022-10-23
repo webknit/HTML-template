@@ -38,6 +38,8 @@ mix.ts('./src/ts/input.ts', 'dist/js/output.js');
 
 mix.njk('./src/html/*.html', 'dist');
 
+mix.js('./src/components/DemoImage/builder.ts', './dist/js/components/DemoImage.js').react();
+
 // CMS
 // mix.css('./src/sass/fonts.css','./wwwroot/css/fonts.css')
 

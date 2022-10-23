@@ -9,7 +9,8 @@
         "format:write": "npx prettier --write src/",
         "format:check": "npx prettier --check src/",
         "lint:check": "eslint src/",
-        "create": "plop"
+        "create": "plop",
+        "percy": "npm run mix:prod && PERCY_TOKEN=19f92bb08d9407b6b75a716b282daa82e400058f39add20a45ed8fcbde1784a3 percy snapshot ./dist"
     },
     "author": "Ashley Redman",
     "devDependencies": {
