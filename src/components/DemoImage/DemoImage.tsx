@@ -11,6 +11,8 @@ interface IProps {
 }
 
 const DemoImage: FunctionComponent<IPropsContainer> = (props): ReactElement => {
+    console.log(props);
+
     return (
         <section className="my-16 space-y-10 p-8">
             <h1>Demo Image</h1>
